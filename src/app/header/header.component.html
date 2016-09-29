@@ -1,7 +1,21 @@
 <md-toolbar color="primary">
+  <h3>
+    <md-icon>aspect_ratio</md-icon> Admin Panel Aspect</h3>
+  <span class="app-toolbar-filler"></span>
 
-    Angular Material2 Example App
+  <span class="app-toolbar-filler"></span>
+  <button md-icon-button class="app-announcement">
+    <md-icon class="md-24">announcement</md-icon>
+    <span class="app-notification">{{notificaciones}}</span>
+  </button>
+  <md-input placeholder="what are you searching?" class="app-inputSearch">
+  </md-input>
+  <button md-icon-button class="app-buttonSearch">
+    <md-icon class="md-24">search</md-icon>
+  </button>
+  <button md-icon-button class="app-close" md-tooltip="Logout sesion">
+    <md-icon class="md-24">input</md-icon>
+  </button>
 
-    <span class="app-toolbar-filler"></span>
-    <button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button>
-  </md-toolbar>
+
+</md-toolbar>

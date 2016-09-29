@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   isDarkTheme: boolean = false;
-
+  notificaciones: number = 2
   constructor() {
   }
 

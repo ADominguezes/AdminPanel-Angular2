@@ -21,8 +21,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot(),
-    MdGridListModule
+    MaterialModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

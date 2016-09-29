@@ -4,14 +4,11 @@
     <md-sidenav #sidenav mode="side" class="app-sidenav" opened="true">
         <app-sidebar></app-sidebar>
     </md-sidenav>
-    <button md-raised-button class="" color="primary" class="app-top-1" (click)="sidenav.toggle()">
+    <button md-raised-button color="primary" class="app-top-1" (click)="sidenav.toggle()">
       <i class="material-icons app-toolbar-menu">menu</i>
     </button>
 
-
-
     <div class="app-content">
-
         <md-card>
             <button md-button>FLAT</button>
             <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
