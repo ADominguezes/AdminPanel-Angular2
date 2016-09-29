@@ -7,11 +7,15 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from '@angular/material';
 import {MdGridListModule} from '@angular2-material/grid-list/grid-list';
 import { BasicFormComponent } from './basic-form/basic-form.component';
+import { HeaderComponent } from './header/header.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicFormComponent
+    BasicFormComponent,
+    HeaderComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
