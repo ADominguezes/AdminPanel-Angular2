@@ -1,1 +1,20 @@
-Sidenav
+<div class="app-sideContent">
+    <div class="app-user-info" [ngStyle]="{'background': styleBackground}">
+        <div class="app-imgUser">
+            <img [src]="urlImgUser" class="app-img-round"/>
+        </div>
+        <div class="app-box-information" (click)="showInfo()">
+            {{name}} {{lastName}}
+        </div>
+        <md-list [hidden]="hiddeInfoUser" class="app-md-list">
+            <a md-list-item href="#" class="app-list-item"><md-icon class="app-icon-list">account_circle</md-icon>View Profile</a>
+            <a md-list-item href="#" class="app-list-item"><md-icon class="app-icon-list">settings</md-icon>Settings</a>
+            <a md-list-item href="#" class="app-list-item"><md-icon class="app-icon-list">power_settings_new</md-icon>Logout</a>
+        </md-list>
+        <md-list>
+            <a md-list-item href="#" class="app-list-item"><md-icon class="app-icon-list">home</md-icon>Home</a>
+            <a md-list-item href="#" class="app-list-item"><md-icon class="app-icon-list">list</md-icon>Forms</a>
+            <a md-list-item href="#" class="app-list-item"><md-icon class="app-icon-list">line_style</md-icon>Grid</a>
+        </md-list>
+    </div>
+</div>

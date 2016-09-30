@@ -1,7 +1,6 @@
-md-sidenav-layout.m2app-dark {
-  background: black;
+md-sidenav {
+  background:linear-gradient(to right,#fafafa 93%,#e4e4e4 100%)
 }
-
 .app-content {
   padding: 20px;
 }
@@ -11,7 +10,6 @@ md-sidenav-layout.m2app-dark {
 }
 
 .app-sidenav {
-  padding: 10px;
   min-width: 200px;
 }
 
@@ -43,7 +41,6 @@ md-sidenav-layout.m2app-dark {
   padding: 0;
   text-align: left;
   text-decoration: none;
-  color:#a11514;
 }
 
 .app-action {

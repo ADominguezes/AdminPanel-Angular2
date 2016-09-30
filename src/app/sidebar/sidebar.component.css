@@ -1,0 +1,33 @@
+.app-sideContent {
+}
+.app-user-info {
+    height: 100px;
+    box-sizing: border-box;
+}
+.app-imgUser {
+    padding:10px;
+}
+.app-img-round {
+    border-radius:50%;
+}
+.app-box-information {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background:rgba(0, 0, 0, 0.70);
+    padding:5px;
+    color:#fff;
+    text-align: center;
+    cursor:pointer;
+}
+.app-list-item {
+    text-decoration:none;
+    color:rgba(0, 0, 0, 0.54)
+}
+.app-list-item:hover{
+    color:rgba(0, 0, 0, 1)
+}
+.app-icon-list {
+    padding-right:5px;
+}
+.app-md-list {
+    border-bottom:1px solid rgba(0, 0, 0, 0.1)
+}
