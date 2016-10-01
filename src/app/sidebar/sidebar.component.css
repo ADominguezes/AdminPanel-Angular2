@@ -23,7 +23,7 @@
     color:rgba(0, 0, 0, 0.54)
 }
 .app-list-item:hover{
-    color:rgba(0, 0, 0, 1)
+    color:#2b2b2b
 }
 .app-icon-list {
     padding-right:5px;
