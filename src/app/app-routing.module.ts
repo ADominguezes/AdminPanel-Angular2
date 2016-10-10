@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { GridComponent } from './grid/grid.component';
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-  providers: []
-})
-export class AdminPanelAngular2RoutingModule { }
+const routes: Routes = [
+  { path: 'grid', component: GridComponent }
+];
+
+export const routing = RouterModule.forRoot(routes);
