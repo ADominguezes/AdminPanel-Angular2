@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,17 +7,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-  /**
-   * get the user information of a JSON 
-   */
-  userInformation = [
-    {
-      name: "Jhon",
-      lastName: "Doe",
-      imgBackground: "background-1-200x100.jpg",
-      imgUser: "1.jpg"
-    }
-  ]
   /**
    * save the user information in the variables
    */
@@ -27,15 +17,15 @@ export class SidebarComponent implements OnInit {
   styleBackground: string;
   hiddeInfoUser: boolean = true;
 
-  constructor() {
+  constructor(private user: UserService) {
     /**
      * We prepare the information for the front end
      */
-    this.name = this.userInformation[0].name;
-    this.lastName = this.userInformation[0].lastName;
-    this.imgBackground = this.userInformation[0].imgBackground;
+    this.name = user.getUserName();
+    this.lastName = user.getUserLastName();
+    this.imgBackground = user.getUserimgBackground();
     this.styleBackground = "url(assets/users/" + this.imgBackground + ") center no-repeat";
-    this.urlImgUser = "assets/users/" + this.userInformation[0].imgUser;
+    this.urlImgUser = "assets/users/" + user.getUserimgUser();
   }
   /**
    * show user info
